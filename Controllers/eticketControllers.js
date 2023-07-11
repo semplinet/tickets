@@ -30,6 +30,7 @@ exports.getboarddoneinbox = async (req, res) => {
                 priority: element.priority,
                 companyname: element.company_name,
                 datecreated: element.datecreated,
+                ticket_no: element.ticket_no,
                 db_id: element._id
             })
         });
@@ -54,6 +55,7 @@ exports.getboardinprogressinbox = async (req, res) => {
                 priority: element.priority,
                 companyname: element.company_name,
                 datecreated: element.datecreated,
+                ticket_no: element.ticket_no,
                 db_id: element._id
             })
         });
@@ -78,6 +80,7 @@ exports.getboardtodoinbox = async (req, res) => {
                 priority: element.priority,
                 companyname: element.company_name,
                 datecreated: element.datecreated,
+                ticket_no: element.ticket_no,
                 db_id: element._id
             })
         });
@@ -103,6 +106,7 @@ exports.getboardinbox = async (req, res) => {
                 priority: element.priority,
                 companyname: element.company_name,
                 datecreated: element.datecreated,
+                ticket_no: element.ticket_no,
                 db_id: element._id
             })
             // console.log(uuid.v4());
