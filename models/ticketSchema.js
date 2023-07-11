@@ -44,7 +44,7 @@ const ticketSchema = new mongoose.Schema({
     status: {
         type: String,
         required: true,
-        default: "pending"
+        default: "Requested"
     },
     cs_type: {
         type: String,
