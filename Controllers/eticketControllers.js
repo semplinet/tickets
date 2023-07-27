@@ -90,6 +90,15 @@ exports.getboardtodoinbox = async (req, res) => {
     }
 }
 
+exports.getallboarddata = async (req, res) => {
+    try {
+        const boarddata = await tickets.find().sort({ _id: -1 });
+        res.status(200).json(boarddata);
+    } catch (error) {
+        res.status(401).json(error);
+    }
+}
+
 exports.getboardinbox = async (req, res) => {
     try {
         const status = 'Requested';
